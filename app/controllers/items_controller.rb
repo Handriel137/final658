@@ -33,7 +33,7 @@ class ItemsController < ApplicationController
   private
 
   def item_params
-    params.permit(:title, :article, :likes, :status)
+    params.permit(:name, :description, :rarity)
   end
 
   def set_character
